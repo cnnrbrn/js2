@@ -1,3 +1,5 @@
+import { registerFormHandler } from "./handlers/auth/registerFormHandler.js";
+
 function router() {
 	const pathname = window.location.pathname;
 
@@ -6,7 +8,7 @@ function router() {
 	switch (pathname) {
 		case "/":
 		case "/index.html":
-			console.log("this is the home page ");
+			registerFormHandler();
 			break;
 	}
 }
