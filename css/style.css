@@ -9,3 +9,8 @@
 	border: 1px orange solid;
 	color: orange;
 }
+
+form {
+	max-width: 400px;
+	margin: 4rem auto 0;
+}
