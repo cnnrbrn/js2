@@ -44,7 +44,26 @@
 		<div class="container">
 			<form id="registerForm">
 				<div id="message"></div>
-				<h1>Home</h1>
+				<h1>Register</h1>
+				<fieldset>
+					<div class="mb-3">
+						<label for="name" class="form-label">Name</label>
+						<input type="text" class="form-control" id="name" name="name" required />
+					</div>
+					<div class="mb-3">
+						<label for="email" class="form-label">Email address</label>
+						<input type="email" class="form-control" id="email" name="email" required />
+					</div>
+					<div class="mb-3">
+						<label for="password" class="form-label">Password</label>
+						<input type="password" class="form-control" id="password" name="password" required minlength="8" />
+					</div>
+					<div class="mb-3">
+						<label for="avatar" class="form-label">Avatar</label>
+						<input type="text" class="form-control" id="avatar" name="avatar" />
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</fieldset>
 			</form>
 		</div>
 	</body>
