@@ -18,5 +18,5 @@ async function handleLoginForm(event) {
 	// const token = data.token;
 
 	storage.save("token", token);
-	location.href = "/admin";
+	location.href = "/posts";
 }

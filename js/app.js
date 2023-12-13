@@ -1,5 +1,6 @@
 import { loginFormHandler } from "./handlers/auth/loginFormHandler.js";
 import { registerFormHandler } from "./handlers/auth/registerFormHandler.js";
+import { displayPostsHandler } from "./handlers/posts/displayPostsHandler.js";
 import { buildMenu } from "./ui/common/buildMenu.js";
 
 function router() {
@@ -12,12 +13,21 @@ function router() {
 	switch (pathname) {
 		case "/":
 		case "/index.html":
+			loginFormHandler();
+			break;
+
+		case "/auth/register/":
+		case "/auth/register/index.html":
 			registerFormHandler();
 			break;
 
-		case "/auth/login/":
-		case "/auth/login/index.html":
-			loginFormHandler();
+		case "/posts/":
+		case "/posts/index.html":
+			displayPostsHandler();
+			break;
+
+		case "/post/index.html":
+			displaySinglePostHandler();
 			break;
 	}
 }
